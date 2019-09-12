@@ -1,0 +1,11 @@
+.logo {
+  float: left;
+}
+
+.logo .h1 {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 64px;
+}

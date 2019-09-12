@@ -7,15 +7,22 @@ module.exports = {
     jest: true,
   },
   rules: {
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'prettier/prettier': [
       'error',
       {
         trailingComma: 'es5',
         singleQuote: true,
-        printWidth: 100,
+        printWidth: 80,
       },
     ],
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },
   plugins: ['prettier'],
+  settings: {
+    "import/resolver": {
+      node: {
+        paths: ["src"]
+      }
+    },
+  }
 };
