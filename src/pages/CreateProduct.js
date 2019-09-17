@@ -66,14 +66,21 @@ const CreateProduct = () => {
       />
       <Upload
         className={styles.input}
-        // onChange={changeEvent => {
-        //   handleChange('file', changeEvent.file);
-        // }}
+        listType="picture"
         customRequest={event => {
           const child = storage.child(`${uniqueFileId}.jpeg`);
-          child.put(event.file).then(data => {
-            console.log(data);
-          });
+          child
+            .put(event.file)
+            .then(snapshot => {
+              return snapshot.ref.getDownloadURL();
+            })
+            .then(url => {
+              handleChange('file', url);
+              event.onSuccess();
+            });
+        }}
+        onPreview={() => {
+          window.open(formData.file, '_blank');
         }}
       >
         <Button>
