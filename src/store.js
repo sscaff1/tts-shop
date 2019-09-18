@@ -4,6 +4,10 @@ import rootReducer from './reducer';
 
 const initialState = {
   products: [],
+  ui: {
+    loading: false,
+  },
+  cart: {},
 };
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
