@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Layout, Menu, Typography } from 'antd';
+import { Link } from '@reach/router';
 import styles from './Layout.module.css';
 
 const { Header, Sider, Content, Footer } = Layout;
@@ -11,17 +12,20 @@ const AppLayout = ({ children }) => {
     <Layout>
       <Header className="header">
         <div className={styles.logo}>
-          <Title className={styles.h1}>TTS Shop</Title>
+          <Link to="/">
+            <Title className={styles.h1}>TTS Shop</Title>
+          </Link>
         </div>
         <Menu
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={['2']}
           style={{ lineHeight: '64px' }}
+          selectedKeys={[]}
         >
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
+          <Menu.Item key="create-products">
+            Create Products
+            <Link to="/create-products" />
+          </Menu.Item>
         </Menu>
       </Header>
       <Layout>

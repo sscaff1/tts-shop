@@ -1,0 +1,11 @@
+.spin {
+  display: block;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
