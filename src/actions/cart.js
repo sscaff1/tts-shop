@@ -1,6 +1,7 @@
 const cartActions = {
   ADD: 'ADD',
   SUBTRACT: 'SUBTRACT',
+  REMOVE: 'REMOVE',
 
   add: id => {
     return {
@@ -12,6 +13,13 @@ const cartActions = {
   subtract: id => {
     return {
       type: cartActions.SUBTRACT,
+      id,
+    };
+  },
+
+  remove: id => {
+    return {
+      type: cartActions.REMOVE,
       id,
     };
   },

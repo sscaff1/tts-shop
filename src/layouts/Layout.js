@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Layout, Menu, Typography } from 'antd';
 import { Link } from '@reach/router';
+import Cart from 'components/cart/Cart';
 import styles from './Layout.module.css';
 
 const { Header, Sider, Content, Footer } = Layout;
@@ -41,7 +42,9 @@ const AppLayout = ({ children }) => {
           </Content>
           <Footer>footer</Footer>
         </Layout>
-        <Sider width={200} style={{ background: '#fff' }} />
+        <Sider width={400} style={{ background: '#fff' }}>
+          <Cart />
+        </Sider>
       </Layout>
     </Layout>
   );

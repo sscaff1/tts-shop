@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'antd';
+import formatPrice from 'utils/formatPrice';
 import ProductControls from './ProductControls';
 
 function Product({ id, title, description, pictureUrl, price }) {
@@ -17,13 +18,7 @@ function Product({ id, title, description, pictureUrl, price }) {
       cover={<img alt={title} src={pictureUrl} />}
     >
       <Card.Meta title={title} description={description} />
-      <h4>
-        {parseFloat(price).toLocaleString('en-US', {
-          currency: 'USD',
-          minimumFractionDigits: 2,
-          style: 'currency',
-        })}
-      </h4>
+      <h4>{formatPrice(price)}</h4>
       <div>
         <ProductControls id={id} />
       </div>

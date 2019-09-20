@@ -1,0 +1,18 @@
+.root {
+  position: relative;
+  height: 88vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content {
+  max-height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
