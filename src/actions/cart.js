@@ -2,7 +2,7 @@ const cartActions = {
   ADD: 'ADD',
   SUBTRACT: 'SUBTRACT',
   REMOVE: 'REMOVE',
-
+  // another comment
   add: id => {
     return {
       type: cartActions.ADD,

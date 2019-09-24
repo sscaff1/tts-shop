@@ -1,4 +1,5 @@
 import React from 'react';
+// adding another comment
 import { useSelector } from 'react-redux';
 import { Button } from 'antd';
 import formatPrice from 'utils/formatPrice';

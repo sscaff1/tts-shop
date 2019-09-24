@@ -11,6 +11,7 @@ function Cart() {
     return objectKeys.reduce((total, key) => {
       return total + state.cart[key];
     }, 0);
+    // another comment
   });
   const cartItems = useSelector(state => {
     return Object.keys(state.cart).map(productKey => {

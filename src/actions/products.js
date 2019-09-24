@@ -3,7 +3,7 @@ import { productDb } from 'utils/firebase';
 const productActions = {
   START_CREATE: 'START_CREATE',
   END_CREATE: 'END_CREATE',
-
+  // add another comment
   START_GET: 'START_GET',
   END_GET: 'END_GET',
 
