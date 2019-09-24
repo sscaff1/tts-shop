@@ -1,11 +1,16 @@
 import React from 'react';
 import Layout from 'layouts/Layout';
-console.log('creating a merge conflict')
+import { Router } from '@reach/router';
+import CreateProduct from 'pages/CreateProduct';
+import Products from 'pages/Products';
 
 function App() {
   return (
     <Layout>
-      <h1>Hello</h1>
+      <Router>
+        <Products path="/" />
+        <CreateProduct path="/create-products" />
+      </Router>
     </Layout>
   );
 }
