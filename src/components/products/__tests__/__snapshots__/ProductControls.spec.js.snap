@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Controls should render 1`] = `
+<div>
+  <button
+    class="ant-btn"
+    type="button"
+  >
+    <span>
+      Add to Cart
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Product Controls should render a count and two action buttons when initial is pressed 1`] = `
+<div>
+  <div>
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        -
+      </span>
+    </button>
+    <span
+      style="margin-left: 5px; margin-right: 5px;"
+    >
+      1
+    </span>
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        +
+      </span>
+    </button>
+  </div>
+</div>
+`;
