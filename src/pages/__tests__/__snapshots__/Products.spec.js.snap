@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Products Page should render 1`] = `
+<div>
+  <div
+    class="grid"
+  >
+    <div
+      class="ant-card ant-card-bordered ant-card-hoverable"
+      style="max-width: 30%; min-width: 30%; flex: 1; margin-bottom: 15px; margin-right: 15px;"
+    >
+      <div
+        class="ant-card-cover"
+      >
+        <img
+          alt="Test"
+          src="test picture"
+        />
+      </div>
+      <div
+        class="ant-card-body"
+      >
+        <div
+          class="ant-card-meta"
+        >
+          <div
+            class="ant-card-meta-detail"
+          >
+            <div
+              class="ant-card-meta-title"
+            >
+              Test
+            </div>
+            <div
+              class="ant-card-meta-description"
+            >
+              test description
+            </div>
+          </div>
+        </div>
+        <h4>
+          $10.00
+        </h4>
+        <div>
+          <button
+            class="ant-btn"
+            type="button"
+          >
+            <span>
+              Add to Cart
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

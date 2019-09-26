@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './reducer';
 
-const initialState = {
+const initState = {
   products: [],
   ui: {
     loading: false,
@@ -12,8 +12,9 @@ const initialState = {
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-export default createStore(
-  rootReducer,
-  initialState,
-  composeEnhancers(applyMiddleware(thunk))
-);
+export default (initialState = initState) =>
+  createStore(
+    rootReducer,
+    initialState,
+    composeEnhancers(applyMiddleware(thunk))
+  );

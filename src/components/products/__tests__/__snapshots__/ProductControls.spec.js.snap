@@ -12,31 +12,3 @@ exports[`Product Controls should render 1`] = `
   </button>
 </div>
 `;
-
-exports[`Product Controls should render a count and two action buttons when initial is pressed 1`] = `
-<div>
-  <div>
-    <button
-      class="ant-btn"
-      type="button"
-    >
-      <span>
-        -
-      </span>
-    </button>
-    <span
-      style="margin-left: 5px; margin-right: 5px;"
-    >
-      1
-    </span>
-    <button
-      class="ant-btn"
-      type="button"
-    >
-      <span>
-        +
-      </span>
-    </button>
-  </div>
-</div>
-`;
